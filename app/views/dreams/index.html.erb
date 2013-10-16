@@ -1,0 +1,7 @@
+<h1>All dreams</h1>
+<% @dreams.each do |dream| %>
+	<h2><%= dream.title %></h2>
+	<h3><%= dream.body %></h3>
+	<%= link_to 'Destroy', dream, method: :delete, data: { confirm: 'Are you sure?' } %>
+
+	<% end %>
